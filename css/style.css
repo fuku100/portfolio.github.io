@@ -321,7 +321,7 @@ header .button:hover::after {
   z-index: 0;
   padding-bottom: 150px;
   background-color: #fff;
-  background: url(../img/desktop-1155613_1920.jpg) center center no-repeat;
+  background: url(../img/work.jpg) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
