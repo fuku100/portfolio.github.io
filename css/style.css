@@ -11,7 +11,6 @@ body {
   width: 100%;
   -webkit-animation: fadeIn 6s ease 0s 1 normal;
   animation: fadeIn 6s ease 0s 1 normal;
-  background-color: #fffee9af;
 }
 
 @keyframes fadeIn {
@@ -313,7 +312,6 @@ header .button:hover::after {
   padding: 0 1rem 1rem;
   font-size: max(1.4vw, 14px);
 }
-
 
 /* main-work------------------------------------------------ */
 .work {
@@ -948,7 +946,6 @@ header .button:hover::after {
 }
 
 /* service-step------------------------------------------------- */
-
 .service-step {
   padding-bottom: 50px;
 }
@@ -1062,8 +1059,8 @@ header .button:hover::after {
   position: absolute;
   top: 67%;
   left: 18%;
-  width: 33vw;
-  height: 24.3vw;
+  width: 32vw;
+  height: max(65%, 270px);
   background-image: -webkit-repeating-linear-gradient(135deg, #b4f4ff, #b4f4ff 1px, transparent 2px, transparent 5px);
   background-image: repeating-linear-gradient(-45deg, #b4f4ff, #b4f4ff 1px, transparent 2px, transparent 5px);
   z-index: 1;
@@ -1107,9 +1104,13 @@ header .button:hover::after {
   width: 20%;
   height: 4px;
   content: '';
-  background-image: -webkit-gradient(linear, left top, right top, from(#e3f7d6), to(#cfedff));
   background-image: -webkit-linear-gradient(left, #e3f7d6 0%, #cfedff 100%);
   background-image: linear-gradient(to right, #e3f7d6 0%, #cfedff 100%);
+}
+
+.step3 h5:after {
+  bottom: 16%;
+  left: 2%;
 }
 
 .hearing p:first-of-type,
@@ -1134,6 +1135,10 @@ header .button:hover::after {
   font-size: max(1.3vw, 14px);
 }
 
+.design p:nth-of-type(2) {
+  padding-right: 2vw;
+}
+
 /* design------------------------------------------------- */
 .design {
   position: relative;
@@ -1146,7 +1151,7 @@ header .button:hover::after {
   top: 98%;
   left: 5%;
   width: 33vw;
-  height: 21.5vw;
+  height: max(84%, 246px);
   background-image: -webkit-repeating-linear-gradient(135deg, #b4f4ff, #b4f4ff 1px, transparent 2px, transparent 5px);
   background-image: repeating-linear-gradient(-45deg, #b4f4ff, #b4f4ff 1px, transparent 2px, transparent 5px);
   z-index: 1;
@@ -1177,7 +1182,7 @@ header .button:hover::after {
 .coding {
   position: relative;
   display: flex;
-  margin: 24% 8% 0;
+  margin: 28% 8% 0;
 }
 
 .coding::after {
@@ -1186,7 +1191,7 @@ header .button:hover::after {
   top: 15%;
   left: 44%;
   width: 46vw;
-  height: 16.5vw;
+  height: max(69%, 192px);
   background-image: -webkit-repeating-linear-gradient(135deg, #b4f4ff, #b4f4ff 1px, transparent 2px, transparent 5px);
   background-image: repeating-linear-gradient(-45deg, #b4f4ff, #b4f4ff 1px, transparent 2px, transparent 5px);
   z-index: -1;
@@ -1217,7 +1222,6 @@ header .button:hover::after {
   font-size: max(1.3vw, 14px);
   z-index: 9;
 }
-
 
 /* contact------------------------------------------------- */
 #contact {
@@ -1268,13 +1272,11 @@ form {
   border: 16px solid transparent;
   background: linear-gradient(#fff, #fff) padding-box,
     repeating-linear-gradient(-45deg, #F44336 0, #F44336 12.5%, transparent 0, transparent 25%, #2196F3 0, #2196F3 37.5%, transparent 0, transparent 50%) 0 / 5em 5em;
-
 }
 
 label {
   font-size: 1.125rem;
   display: block;
-
 }
 
 input[type="text"],
@@ -1322,6 +1324,9 @@ form .button {
   padding: .8rem;
 }
 
+form .button:hover {
+  background-color: rgb(255, 254, 166);
+}
 
 /* footer------------------------------------------------- */
 footer {
