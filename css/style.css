@@ -1087,6 +1087,12 @@ header .button:hover::after {
   z-index: 2;
 }
 
+.step1 span,
+.step2 span,
+.step3 span {
+  letter-spacing: .7px;
+}
+
 .step1 h5,
 .step2 h5,
 .step3 h5 {
@@ -1263,7 +1269,6 @@ header .button:hover::after {
 
 form {
   background-color: #ffffff;
-  width: 38%;
   margin: 0 auto;
   padding: 4vw;
   border-radius: 8px;
@@ -1300,8 +1305,6 @@ input[type="email"] {
   width: 70%;
 }
 
-
-
 textarea {
   width: 100%;
   max-width: 630px;
@@ -1335,6 +1338,139 @@ footer {
   color: #fff;
   padding: 1rem;
 }
+
+
+/* pad-------------------------------------------------------------------------- */
+@media screen and (max-width: 959px) {
+  .about-me {
+    width: 60%;
+  }
+
+  .about h2:before {
+    position: absolute;
+    bottom: -6px;
+    left: calc(50% - 22px);
+    width: 50px;
+  }
+
+  .work h2:before {
+    left: calc(50% - 19px);
+  }
+
+  .work h3 {
+    top: 53px;
+    letter-spacing: 0;
+  }
+
+  .skill h5 {
+    line-height: 1.5rem;
+  }
+
+  .skill h5:before {
+    bottom: 7px;
+    height: 4px;
+  }
+
+  .skill ruby:first-of-type {
+    top: 14%;
+    left: -8%;
+  }
+
+  .skill ruby:nth-of-type(2) {
+    right: 1%;
+  }
+
+  .skill ruby:nth-of-type(3) {
+    top: 46%;
+    left: -12.5%;
+  }
+
+  .macaroons .skill ruby:first-of-type {
+    left: 6%;
+  }
+
+  .service h2:before {
+    bottom: 13px;
+    left: calc(50.5% - 20px);
+    height: 4px;
+  }
+
+  .service h3 {
+    letter-spacing: 0;
+  }
+
+  .service-list p {
+    margin: -1rem 9vw;
+  }
+
+  .step1 h5:after,
+  .step2 h5:after,
+  .step3 h5:after {
+    bottom: 21%;
+    left: 3%;
+    width: 17%;
+    height: 3px;
+  }
+
+  .step3 h5:after {
+    bottom: 14%;
+    width: 10%;
+  }
+
+  .step1 h5,
+  .step2 h5,
+  .step3 h5 {
+    padding: 0 .5rem 1rem;
+  }
+
+  .step1 {
+    width: 39vw;
+  }
+
+  .hearing::after {
+    width: 37vw;
+    height: max(65%, 250px);
+  }
+
+  .step2 {
+    width: 37vw;
+  }
+
+  .design::after {
+    height: max(84%, 222px);
+  }
+
+  .coding {
+    margin: 35% 8% 0;
+  }
+
+  .step3 {
+    width: 53vw;
+  }
+
+  .coding::after {
+    left: 45%;
+    width: 53vw;
+    height: max(69%, 172px);
+  }
+
+  #contact h2:before {
+    bottom: -6px;
+    left: calc(50% - 23px);
+    width: 48px;
+    height: 4px;
+  }
+
+  form {
+    background-color: #ffffff;
+    width: 85%;
+  }
+
+
+
+}
+
+
 
 
 
