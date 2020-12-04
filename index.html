@@ -9,6 +9,7 @@ https://twitter.com/Fukuhara100 -->
 
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
@@ -37,6 +38,7 @@ https://twitter.com/Fukuhara100 -->
   <meta name="description" content="ふくはらのポートフォリオです">
   <link rel="icon" type="image/png" href="img/favicon.ico">
 </head>
+
 <body>
   <header>
     <h1>Fukuhara Portfolio</h1>
@@ -59,7 +61,8 @@ https://twitter.com/Fukuhara100 -->
       <div class="profile">
         <img src="img/img31.jpg" alt="ふくはらももこの画像">
         <div class="about-me">
-          <h4>ふくはら<span><a href="https://twitter.com/Fukuhara100"><i class="fab fa-twitter"></i>@Fukuhara100</a></span></h4>
+          <h4>ふくはら<span><a href="https://twitter.com/Fukuhara100"><i class="fab fa-twitter"></i>@Fukuhara100</a></span>
+          </h4>
           <p>【出身地】</p>
           <p>石垣島生まれ、沖縄本島在住</p>
           <p>【業務内容】</p>
@@ -128,7 +131,8 @@ https://twitter.com/Fukuhara100 -->
 
         <div class="macaroons-wrapper">
           <div class="mlink-item">
-            <h4>架空サイト<span><a target="_blank" href="https://fuku100.github.io/macaroons.github.io/">マカロンのお店</a></span></h4>
+            <h4>架空サイト<span><a target="_blank" href="https://fuku100.github.io/macaroons.github.io/">マカロンのお店</a></span>
+            </h4>
             <span class="c-arrow">
               <span class="c-arrow__circle"></span>
               <span class="c-arrow__inner"></span>
@@ -166,75 +170,66 @@ https://twitter.com/Fukuhara100 -->
       <div class="service">
         <h2>サービス</h2>
         <h3>Service</h3>
+      </div><!-- service -->
 
-        <div class="service-step">
-          <ol>
-            <li>
-              <i class="fas fa-headset"></i>
-              <p>ヒヤリング</p>
-            </li>
-            <li><i class="fas fa-caret-right"></i>
-            </li>
-            <li>
-              <i class="fas fa-pen-fancy"></i>
-              <p>デザイン</p>
-            </li>
-            <li><i class="fas fa-caret-right"></i>
-            </li>
-            <li>
-              <i class="fas fa-file-code"></i>
-              <p>コーディング</p>
-            </li>
-          </ol>
-          <div class="service-list">
-            <p>Hearing</p>
-            <p>Design</p>
-            <p>Coding</p>
-          </div><!-- service-list -->
-        </div><!-- service-step -->
-
-        <div class="service-he-de">
+      <div class="tab-wrap">
+        <input id="TAB-01" type="radio" name="TAB" class="tab-switch" checked="checked" />
+        <label class="tab-label"
+          for="TAB-01">
+          <i class="fas fa-headset"></i>
+          <p>ヒヤリング</p>
+        </label>
+        <div class="tab-content">
 
           <div class="hearing">
             <h4>Hearing</h4>
             <img src="img/hearing.jpg" alt="">
             <div class="step1">
               <h5>お客様のご要望をお聞かせください</h5>
-              <p>【沖縄県内】</p>
-              <p>メール（テキストコミュニケーション）<br>直接のご対応、<span>ZOOM</span>等オンライン<br>などで打ち合わせ可能です。</p>
-              <p>【沖縄県外】</p>
-              <p>メール（テキストコミュニケーション）<br><span>ZOOM</span>等オンライ打ち合わせ<br>などで打ち合わせ可能です。</p>
+              <p>メール等（テキストコミュニケーション）や<br><span>ZOOM</span>等オンライン打ち合わせも可能です。</p>
+              <p><samp>【沖縄県内】</samp>直接のご対応も可能です。</p>
+
             </div><!-- step1 -->
           </div><!-- hearing -->
+        </div><!-- tab-content -->
 
+        <input id="TAB-02" type="radio" name="TAB" class="tab-switch" />
+        <label class="tab-label" for="TAB-02">
+          <i class="fas fa-pen-fancy"></i>
+          <p>デザイン</p>
+        </label>
+        <div class="tab-content">
           <div class="design">
             <h4>Design</h4>
             <img src="img/design.jpg" alt="">
             <div class="step2">
               <h5>サイトのデザイン</h5>
-              <p>【デザインがある方】</p>
-              <p><span> XD・Photoshop</span>など、お客様のデザインデータお預かり</p>
-              <p>【デザインがない方】</p>
+              <p>お客様のデザインデータお預かり</p>
               <p>ラフデザイン作成（２案）</p>
-              <p><span>PC</span>用・<span>Pad</span>・スマートフォンの<br>各トップページデザイン</p>
+              <p><span>PC</span>・<span>Pad</span>・スマートフォンの<br>トップページデザイン</p>
             </div><!-- step2 -->
           </div><!-- design -->
-        </div><!-- service-he-de -->
+        </div><!-- tab-content -->
 
-        <div class="coding">
-          <h4>Coding</h4>
-          <img src="img/coding.jpg" alt="">
-          <div class="step3">
-            <h5>お預かりしたデザインデータ、作成したデザインを元に<br>サイトのコーディングいたします</h5>
-            <p><span>LP</span>（ ランディングページ ）制作</p>
-            <p><span>HP</span>（ ホームページ ）制作</p>
-            <p>レスポンシブコーディング</p>
-          </div><!-- step3 -->
-        </div><!-- coding -->
-
-      </div><!-- service -->
+        <input id="TAB-03" type="radio" name="TAB" class="tab-switch" />
+        <label class="tab-label" for="TAB-03">
+          <i class="fas fa-file-code"></i>
+          <p>コーディング</p>
+        </label>
+        <div class="tab-content">
+          <div class="coding">
+            <h4>Coding</h4>
+            <img src="img/coding.jpg" alt="">
+            <div class="step3">
+              <h5>デザインを元にサイトのコーディング</h5>
+              <p><span>LP</span>（ ランディングページ ）制作</p>
+              <p><span>HP</span>（ ホームページ ）制作</p>
+              <p>レスポンシブコーディング</p>
+            </div><!-- step3 -->
+          </div><!-- coding -->
+        </div><!-- tab-content -->
+      </div><!-- tab-wrap -->
     </section>
-
 
     <section>
       <div id="contact">
