@@ -1185,7 +1185,7 @@ form {
   margin: 0 auto;
   padding: 4vw;
   border-radius: 8px;
-  width: 60%;
+  width: min(60%, 600px);
   height: auto;
   border: 16px solid transparent;
   background: linear-gradient(#fff, #fff) padding-box,
@@ -1209,13 +1209,8 @@ textarea {
 
 input[type="text"],
 input[type="email"] {
-  width: 50%;
   max-width: 630px;
   border: 1px solid #333;
-}
-
-input[type="email"] {
-  width: 70%;
 }
 
 textarea {
